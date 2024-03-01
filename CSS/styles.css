@@ -1,0 +1,73 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting up basic styles */
+body {
+    font-family: Arial, sans-serif; /* Optional: You can change the font-family */
+    padding-top: 20px; /* Add spacing between header and content */
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 36px; /* Optional: You can adjust the font size */
+}
+
+.content {
+    padding: 20px; /* Add padding around content */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1;
+    padding: 10px;
+}
+
+.section {
+    position: relative;
+    border: 1px solid black;
+    padding: 40px;
+    background-color: lightblue; /* Set your desired background color */
+    color: black; /* Adjust text color if necessary */
+}
+
+.section h2 {
+    font-size: 125%; /* Optional: You can adjust the font size */
+}
+
+/* Positioning section title region */
+.section h2 {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    background-color: lightcoral; /* Set your desired background color */
+    padding: 5px 10px;
+    border: 1px solid black;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 991px) {
+    .col {
+        flex: 1 0 100%;
+    }
+    .section:nth-child(3) {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section {
+        margin-top: 20px;
+    }
+}
